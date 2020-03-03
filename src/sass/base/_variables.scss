@@ -1,0 +1,11 @@
+$main-color: #ADD54C;
+
+@font-face {
+    font-family: 'PT Sans Pro';
+    src: local('PT Sans Pro Cond'), local('PT-Sans-Pro-Cond'),
+        url('PTSansPro-Cond.woff2') format('woff2'),
+        url('PTSansPro-Cond.woff') format('woff'),
+        url('PTSansPro-Cond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

@@ -1,0 +1,116 @@
+@media (max-width: 991px) {
+    .contacts {
+        &__title {
+            font-size: 80px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .contacts {
+        &__title {
+            font-size: 70px;
+            margin-bottom: 50px;
+        }
+        &__item {
+            max-height: 120px;
+            padding-bottom: 40px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            margin-bottom: 25px;
+
+        }
+        &__descr {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+
+@media (max-width: 640px) {
+    .header {
+        top: 0;
+    }
+    .contacts {
+        margin: 0;
+        position: fixed;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		left: -100%;
+        width: 50%;
+        height: 100%;
+		padding: 0px 15px;
+		background-color: rgba(0,0,0, .6);
+        transition: 0.6s all;
+        &_active {
+            color: #fff;
+            left: 0;
+        }
+         &__title {
+            font-size: 15px;
+            margin:6px 0 16px 0;
+        }
+        &__item {
+            max-height: 120px;
+            padding-bottom: 20px;
+        }
+        &__subtitle {
+            font-size: 12px;
+            margin-bottom: 10px;
+            color: rgba($color: #fff, $alpha: .8)
+
+        }
+        &__descr {
+            font-size: 7px;
+            line-height: 12px;
+            color: #fff;
+            &_tel {
+                font-size: 7px;
+                line-height: 12px;
+                color: #fff;
+            }
+        }
+    }  
+    .hamburger {
+        display: block;
+		position: absolute;
+		right: 10px;
+		top: 7%;
+		transform: translateY(-50%);
+		width: 26px;
+        height: 12px;
+        span {
+            display: block ;
+            height: 2px;
+            max-width: 70%;
+            font-size: 8px;
+            background-color: #000;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+            p  {
+                margin: 0;
+            }
+        }
+        &_active {
+            span {
+                margin-bottom: -2px ; 
+                &:nth-child(1){
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                 }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+                p  {
+                    display: none;
+                }
+            }
+        }
+    }
+}
